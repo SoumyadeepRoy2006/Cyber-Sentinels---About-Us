@@ -1,0 +1,7 @@
+header{
+     background-color: var(--th-col);
+}
+header img{
+     width: max(10vw, 6.9rem);
+     padding: 0.8vw 20px;
+}

@@ -1,0 +1,12 @@
+footer{
+    position: relative;
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.1px solid var(--accent);
+}
+footer img{
+    height: max(0.6vw, 1.6rem);
+    padding-top: 5px;
+}

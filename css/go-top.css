@@ -1,0 +1,7 @@
+#go-top{
+    height: 4rem; width: 4rem;
+    position: fixed; bottom: 5%; right: 2%;
+    background: var(--accent) url(../img/icon/arrow-up.svg) center/60% no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}

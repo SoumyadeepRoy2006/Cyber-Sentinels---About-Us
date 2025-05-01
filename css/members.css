@@ -1,0 +1,99 @@
+h1:first-child{
+    padding-bottom: 100px;
+}
+#members .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 2%; row-gap: 40px;
+}
+#members .card{
+    width: 360px; height: 440px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--theme);
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    box-shadow: 0 0 100px rgba(0, 183, 255, 0.237);
+}
+#members .cards .cardbg{
+    width: 100%; height: 37%;
+    position: absolute; top: 0;
+    background: var(--accent);
+    border-radius: 29px 29px 25px 25px;
+}
+.cards #leader{
+    box-shadow: 0 0 100px rgba(255, 140, 0, 0.65);
+}
+.cards #leader .cardbg{
+    background: linear-gradient(-10deg, gold, orange);
+}
+#members .cards .pro-circle{
+    width: 160px; height: 160px;
+    position: absolute; 
+    transform: translate(-50%, -50%);
+    top: 35%; left: 50%;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 50%;
+    z-index:1;
+}
+#members .cards .pro-circle .profilepic{
+    width: 160px; height: 160px;
+    position: absolute;
+    border-radius: 50%;
+}
+#profilepic_Piu{
+    background: url(../img/people/Piu.jpg) center/cover no-repeat;
+}
+#profilepic_Ch{
+    background: url(../img/people/Chetan.jpg) center/cover no-repeat;
+}
+#profilepic_SR{
+    background: url(../img/people/Soumyadeep.jpg) center/cover no-repeat;
+}
+#profilepic_Anu{
+    background: url(../img/people/Penguin.jpg) center/cover no-repeat;
+}
+.cards .card > p{
+    text-align: center;
+    margin: 0;
+}
+.cards .card > h2:first-of-type{
+    text-align: center;
+}
+.cards .card > *:last-child{
+    margin-top: 0px;
+}
+.cards .card > .links{
+    display: flex;
+    justify-content: center;
+    align-items: center; align-self: center;
+    column-gap: 20px;
+    width: 80%; height: 18%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(50, 50, 50);
+    font-size: 55%;
+    font-weight: 500;
+    align-items: center;
+}
+.cards .card > .links > .circle{
+    position: relative;
+    width: 25px; height: 25px;
+    justify-content: center; align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+.cards .card .links .circle .linklink{
+    position: absolute;
+    width: 25px; height: 25px;
+    background: url(../img/logo/LinkedIn.png) center/cover no-repeat;
+}
+.cards .card .links .circle .gitlink{
+    position: absolute;
+    width: 25px; height: 25px;
+    background: url(../img/logo/Github.png) center/cover no-repeat;
+}

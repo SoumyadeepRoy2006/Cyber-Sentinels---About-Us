@@ -1,0 +1,61 @@
+body,html{
+     margin: 0; padding: 0;
+     color: white;
+     background-color: var(--theme);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+     display: none;
+}
+body *{
+     position: relative;
+     transition: background-color 0.14s ease-out;
+     user-select: none;
+}
+a{
+     text-decoration: none;
+     color: var(--accent);
+     margin: 0;
+}
+a:visited{
+     color: unset;
+}
+#navbar, footer {
+     display:flex;
+}
+
+
+#about-us > *:not(a),
+#projects > *:not(a),
+#achievements > *:not(a),
+#members > *:not(a),
+#formers > *:not(a),
+#contact > *:not(a)
+{
+     margin: 0 var(--def-mar) 0 var(--def-mar);
+}
+
+
+h1{
+     padding-top: calc(50px + 5vh);
+     padding-bottom: 30px;
+     text-decoration: 0.1rem underline var(--accent);
+}
+h3{
+     font-weight: 600;
+     padding-bottom: 10px;
+}
+p, li{
+     font-size: 1.2rem;
+     padding-bottom: 2px;
+}
+ul, ol{
+     padding-left: 5vh;
+}
+/* Variables */
+:root{
+     --theme: rgb(0, 20,20);
+     --accent: rgb(169, 213, 226);
+     --def-mar: 3vw
+}
