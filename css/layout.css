@@ -24,6 +24,10 @@ a:visited{
 #navbar, footer {
      display:flex;
 }
+#navbar {
+     position: unset;
+     top: 0;
+}
 
 
 #about-us > *:not(a),

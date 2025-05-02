@@ -4,11 +4,10 @@ h1:first-child{
 #members .cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     column-gap: 2%; row-gap: 40px;
 }
 #members .card{
-    width: 360px; height: 440px;
+    width: 20rem; height: 24rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -32,17 +31,17 @@ h1:first-child{
     background: linear-gradient(-10deg, gold, orange);
 }
 #members .cards .pro-circle{
-    width: 160px; height: 160px;
+    width: 8rem; height: 8rem;
     position: absolute; 
     transform: translate(-50%, -50%);
-    top: 35%; left: 50%;
+    top: 32%; left: 50%;
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 50%;
     z-index:1;
 }
 #members .cards .pro-circle .profilepic{
-    width: 160px; height: 160px;
+    width: 8rem; height: 8rem;
     position: absolute;
     border-radius: 50%;
 }
@@ -62,8 +61,16 @@ h1:first-child{
     text-align: center;
     margin: 0;
 }
+.card h2{
+    font-size: 1.5rem;
+}
+.card p{
+    font-size: 1.1rem;
+}
 .cards .card > h2:first-of-type{
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
 }
 .cards .card > *:last-child{
     margin-top: 0px;
@@ -96,4 +103,24 @@ h1:first-child{
     position: absolute;
     width: 25px; height: 25px;
     background: url(../img/logo/Github.png) center/cover no-repeat;
+}
+@media (max-width: 696px) {
+    #members .cards{
+        justify-content: space-evenly;
+    }
+    #members .card{
+        width: 25rem; height: 30rem;
+    }
+
+    #members .cards .pro-circle,
+    #members .cards .pro-circle .profilepic
+    {
+        width: 11rem; height: 11rem;
+    }
+    #members .card h2{
+        font-size: 2rem;
+    }
+    #members .card p{
+        font-size: 1.2rem;
+    }
 }
