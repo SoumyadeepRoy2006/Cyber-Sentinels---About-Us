@@ -4,7 +4,8 @@ h1:first-child{
 #members .cards{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 2%; row-gap: 40px;
+    justify-content: center;
+    column-gap: 4%; row-gap: 40px;
 }
 #members .card{
     width: 20rem; height: 24rem;

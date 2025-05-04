@@ -12,6 +12,7 @@ body *{
      position: relative;
      transition: background-color 0.14s ease-out;
      user-select: none;
+     -webkit-tap-highlight-color: transparent;
 }
 a{
      text-decoration: none;
